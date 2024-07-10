@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Question</title>
+<style>
+h1 {
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+label {
+margin-right: 10px;
+}
+
+input {
+width: 300px;
+padding: 10px;
+margin: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.button {
+background-color: #4caf50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.error {
+color: red;
+font-size: 1.2rem;
+}
+</style>
+</head>
+<body>
+<h1>Add Question</h1>
+<form action="/add" method="POST">
+<label for="question">Question:</label>
+<input type="text" id="question" name="question" placeholder="Enter your question here">
+
+<label for="answer1">Option 1:</label>
+<input type="text" id="answer1" name="answer1" placeholder="Enter option 1 here">
+
+<label for="answer2">Option 2:</label>
+<input type="text" id="answer2" name="answer2" placeholder="Enter option 2 here">
+
+<label for="answer3">Option 3:</label>
+<input type="text" id="answer3" name="answer3" placeholder="Enter option 3 here">
+
+<label for="answer4">Option 4:</label>
+<input type="text" id="answer4" name="answer4" placeholder="Enter option 4 here">
+
+<input type="submit" value="Add Question" class="button">
+</form>
+</body>
+</html>
+
