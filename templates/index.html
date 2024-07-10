@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quizzing App</title>
+<style>
+h1 {
+text-align: center;
+}
+
+#question {
+font-size: 1.5rem;
+}
+
+.options {
+display: flex;
+justify-content: space-around;
+}
+
+.button {
+background-color: #4caf50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.error {
+color: red;
+font-size: 1.2rem;
+}
+</style>
+</head>
+<body>
+<h1>Quizzing App</h1>
+<div id="quiz">
+<h2 id="question"></h2>
+<div class="options">
+<button type="button" class="option" id="option1">Option 1</button>
+<button type="button" class="option" id="option2">Option 2</button>
+<button type="button" class="option" id="option3">Option 3</button>
+<button type="button" class="option" id="option4">Option 4</button>
+</div>
+</div>
+<br>
+<button type="button" class="button" id="submit">Generate New Questions</button>
+<div id="result" style="display: none;">
+<h2 id="correct_answer"></h2>
+<h2 id="user_answer"></h2>
+</div>
+<script>
+// TODO: Add JavaScript code here to handle the quiz functionality
+</script>
+</body>
+</html>
+
