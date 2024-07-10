@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results</title>
+<style>
+h1 {
+text-align: center;
+}
+
+#results {
+display: flex;
+justify-content: space-around;
+}
+
+.result {
+width: 300px;
+padding: 10px;
+margin: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.correct {
+background-color: #4caf50; /* Green */
+}
+
+.incorrect {
+background-color: #f44336; /* Red */
+}
+</style>
+</head>
+<body>
+<h1>Results</h1>
+<div id="results">
+<div class="result" id="correct_answer">
+<h2>Correct Answer:</h2>
+</div>
+<div class="result" id="user_answer">
+<h2>Your Answer:</h2>
+</div>
+</div>
+</body>
+</html>
+
